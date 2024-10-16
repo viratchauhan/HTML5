@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape-Shifting Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .shape-button {
+            padding: 15px 40px;
+            font-size: 18px;
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .shape-button:hover {
+            border-radius: 50%; /* Changes the shape to a circle */
+            width: 100px; /* Adjust the width for circle appearance */
+            height: 100px; /* Adjust the height for circle appearance */
+            background-color: #E64A19; /* Changes to a darker shade of orange */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="shape-button">Hover Me</button>
+    </div>
+</body>
+</html>
